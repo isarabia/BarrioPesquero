@@ -1,0 +1,27 @@
+/* home */
+.contenedorIconos{
+    display: flex;
+    flex-direction: row;        
+    width: 100%;
+}
+.contenedorIconos h3{
+    margin-left: 1vw;
+    font-size: 3vh;
+}
+.bajarFlecha{
+    border: 0;
+    bottom: -4vh;
+    display: block;
+    height: 5em;
+    left: 50%;
+    margin: 0 0 0 -5em;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 10em;
+    white-space: nowrap;
+    width: 10em;
+    z-index: 1;   
+}
+
+/* Lugares de interes */
+
