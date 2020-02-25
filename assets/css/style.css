@@ -1,14 +1,30 @@
 /* home */
-.contenedorIconos{
+
+@font-face {
+    font-family: Aquatico-Regular;
+    src: url(../fonts/AquaticoRegular-PersonalUse/Aquatico-Regular.otf);
+}
+h2 {
+    font-family: Aquatico-Regular;
+}
+
+.IconoPrincipal {
+    padding: 10px;
+}
+/* Se le aplica el flexbox*/
+.contenedorIconos {
     display: flex;
-    flex-direction: row;        
+    flex-direction: row;
     width: 100%;
 }
-.contenedorIconos h3{
+/*se le da un margen al resumen de secciones*/
+.contenedorIconos h3 {
     margin-left: 1vw;
     font-size: 3vh;
 }
-.bajarFlecha{
+
+/* Se modifican las propiedades de la segunda flecha para colocarla correctamente.*/
+.bajarFlecha {
     border: 0;
     bottom: -4vh;
     display: block;
@@ -20,8 +36,269 @@
     text-indent: 10em;
     white-space: nowrap;
     width: 10em;
-    z-index: 1;   
+    z-index: 1;
+}
+/* Cambiamos las propiedades de los textos para que se puedan ver mejor*/
+.registroEmail {
+    /*color:#5b98d6;*/
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+.registroEmail2 {
+    /*color:#5b98d6;*/
+    background: yellow;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
-/* Lugares de interes */
+/*----------------------------------*/
 
+/* lugares  *
+
+ /*Contenedor pincipal con flex*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5rem;
+    font-size: 1rem;
+}
+
+/*Hay dos tipos de secciones, left and right, cada unas tienen sus propiedades */
+
+/*Articulo left*/
+
+.articuloleft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.cuerpoleft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.textoInformativoLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.fotosLeft {
+    width: 100%;
+}
+
+.contenedorImagenLeft {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    height: fit-content;
+    margin-left: 6rem;
+}
+
+
+/*Articulo Right*/
+
+.articuloRight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.cuerpoRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.textoInformativoRight {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 2rem;
+    font-size: 1rem;
+}
+
+.fotosRight {
+    width: 100%;
+}
+
+.contenedorImagenRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    height: fit-content;
+    margin-right: 7rem;
+}
+
+/*---------------------------------------------*/
+
+/* Esta media se utiliza para controlar la pagina de lugares*/
+/*Tambien esta dividido en dos secciones, left y right*/
+
+@media all and (max-width: 960px) {
+    /*Articulo left*/
+    .articuloleft {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .cuerpoleft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .textoInformativoLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0rem;
+        margin: 0 auto;
+        padding-top: 1rem;
+        text-align: center;
+       /* bottom: auto; */
+    }
+    .textoInformativoLeft footer {
+      /*  padding-left: 4rem; */
+      margin-left: 7rem;
+    }
+    .fotosLeft {
+        width: 100%;
+    }
+    .contenedorImagenLeft {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0rem;
+    }
+    /*Articulo Right*/
+    .articuloRight {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    .cuerpoRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .textoInformativoRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0rem;
+        margin: 0 auto;
+        padding-top: 1rem;
+        order: 2;
+    }
+
+    .textoInformativoRight footer {
+       /* padding-left: 4rem; */
+       margin-left: 3rem;
+       
+    }
+    .fotosRight {
+        width: 100%;
+    }
+    .contenedorImagenRight {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0rem;
+    }
+    /* Se centran los botones cuando se hace para movil.*/
+    .button1{
+        margin-left: -1rem;
+    }
+    .button2{
+        margin-left: -1rem;
+    }
+    .button3{
+        margin-left: 2.4rem; 
+    }
+    .button4{
+        margin-left: 0.5rem; 
+    }
+    .button5{
+        margin-left: 5.5rem; 
+    }
+    .button6{
+        margin-left: -1rem; 
+    }
+    .button7{
+        margin-left: 5.5rem; 
+    }
+    .button8{
+        margin-left: 0.5rem; 
+    }
+}
+
+
+/* historia */
+
+.container-sotileza {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.solitleza {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.solitleza h3{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.solitleza img{
+    margin-left: 300px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+
+.imagenleft {
+    float: left;
+    margin-right: 1rem;
+    padding: 0rem;
+}
+
+.imagenleft1 {
+    float: left;
+    margin-right: 1rem;
+}
+
+.imagenleft2 {
+    float: right;
+    margin-left: 1rem;
+}
+
+.portada {
+    width: 100%;
+}
+
+.contenidoPortada {
+    width: 100%;
+}
+
+
+/* Donde estamos */
+
+iframe {
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 30px;
+}

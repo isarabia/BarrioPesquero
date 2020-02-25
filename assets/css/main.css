@@ -207,12 +207,12 @@ a {
     -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     border-bottom: dotted 1px;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 85, 85);
     text-decoration: none;
 }
 
 a:hover {
-    color: red !important;
+    color: rgb(255, 85, 85) !important;
     border-bottom-color: transparent;
 }
 
@@ -2295,7 +2295,7 @@ header.major {
 }
 
 header.major:after {
-    background: #e44c65;
+    background: #5b98d6;
     content: '';
     display: inline-block;
     height: 0.2em;
@@ -2364,7 +2364,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #e44c65;
+    border-color: #5b98d6;
 }
 
 select {
@@ -2467,7 +2467,7 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-    border-color: #e44c65;
+    border-color: #5b98d6;
 }
 
 input[type="checkbox"]+label:before {
@@ -2968,8 +2968,8 @@ input[type="button"]:hover,
 input[type="button"]:active,
 .button:hover,
 .button:active {
-    box-shadow: inset 0 0 0 1px #e44c65;
-    color: #e44c65 !important;
+    box-shadow: inset 0 0 0 1px #5b98d6;
+    color: #5b98d6 !important;
 }
 
 input[type="submit"]:active,
@@ -3011,7 +3011,7 @@ input[type="submit"].primary,
 input[type="reset"].primary,
 input[type="button"].primary,
 .button.primary {
-    background-color: #e44c65;
+    background-color: #5b98d6;
     box-shadow: none;
     color: #ffffff !important;
 }
@@ -3020,14 +3020,14 @@ input[type="submit"].primary:hover,
 input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 .button.primary:hover {
-    background-color: #e76278;
+    background-color: #5b98d6;
 }
 
 input[type="submit"].primary:active,
 input[type="reset"].primary:active,
 input[type="button"].primary:active,
 .button.primary:active {
-    background-color: #e13652;
+    background-color: #5b98d6;
 }
 
 input[type="submit"].disabled,
@@ -3223,7 +3223,7 @@ input[type="button"]:disabled,
 .spotlight.top .content,
 .spotlight.bottom .content {
     left: 0;
-    padding: 0.5em 0 0.5em 0;
+    padding: 2em 0 0.5em 0;
     width: 100%;
 }
 
@@ -3256,15 +3256,15 @@ input[type="button"]:disabled,
 }
 
 .spotlight.style1 .content {
-    border-color: #e44c65;
+    border-color: #5b98d6;
 }
 
 .spotlight.style2 .content {
-    border-color: #5480f1;
+    border-color: #5b98d6;
 }
 
 .spotlight.style3 .content {
-    border-color: #39c088;
+    border-color: #5b98d6;
 }
 
 .spotlight.inactive .content {
@@ -3318,7 +3318,9 @@ body.is-touch .spotlight {
 }
 
 .wrapper.style2 {
-    background-color: rgba(0, 0, 0, 0.75);
+    background:url("../../images/Principal_BarcoPrincipal_Azul_Pequeña.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper.style2 input[type="text"]:focus,
@@ -3354,7 +3356,7 @@ body.is-touch .spotlight {
 .wrapper.style2 input[type="button"].primary,
 .wrapper.style2 .button.primary {
     background-color: #ffffff;
-    color: #e44c65 !important;
+    color: #5b98d6 !important;
 }
 
 .wrapper.style2 input[type="submit"].primary:hover,
@@ -3461,7 +3463,7 @@ body.is-touch .spotlight {
 
 .dropotron>li.active>a,
 .dropotron>li.active>span {
-    color: #e44c65;
+    color: #5b98d6;
 }
 
 .dropotron.level-0 {
@@ -3506,6 +3508,7 @@ body.landing .dropotron.level-0 {
     width: 100%;
     z-index: 100;
     color: #fff;
+    font-family: Aquatico-Regular;
 }
 
 #header h1 {
@@ -3521,6 +3524,7 @@ body.landing .dropotron.level-0 {
     position: absolute;
     right: 1em;
     top: 0;
+    position: fixed;
 }
 
 #header nav ul {
@@ -3534,12 +3538,21 @@ body.landing .dropotron.level-0 {
 
 #header nav ul li a,
 #header nav ul li span {
+    padding-right: 8px;
     border: 0;
     color: inherit;
     display: inline-block;
     height: inherit;
     line-height: inherit;
     outline: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#header nav ul li:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transition: 2s;
+    
 }
 
 #header nav ul li a.button,
@@ -3556,7 +3569,7 @@ body.landing .dropotron.level-0 {
 
 #header nav ul li.active>a,
 #header nav ul li.active>span {
-    color: #e44c65;
+    color: #5b98d6;
 }
 
 #header nav ul li>ul {
@@ -3577,8 +3590,9 @@ body.landing #header {
 
 #banner {
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.55);
-    /*background-image: url("../../images/banner.jpg");*/
+    /*background-color: rgba(233, 33, 33, 100);   */
+    background-color:  #5b98d6;
+    background-image: url("../../images/banner.jpg");
     background-position: center center;
     background-size: cover;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3597,10 +3611,10 @@ body.landing #header {
 }
 
 #banner:after {
-    background-image: -moz-linear-gradient(top,  rgba(0, 0, 0, 1),rgba(0, 0, 0, 1)), url("images/overlay.png");
-    background-image: -webkit-linear-gradient(top,  rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1)), url("images/overlay.png");
-    background-image: -ms-linear-gradient(top,  rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1)), url("images/overlay.png");
-    background-image: linear-gradient(top,  rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1)), url("images/overlay.png");
+    background-image: -moz-linear-gradient(top,  #5b98d6,rgba(0, 0, 0, 1)), url("images/overlay.png");
+    background-image: -webkit-linear-gradient(top, #5b98d6,rgba(0, 0, 0, 1)), url("images/overlay.png");
+    background-image: -ms-linear-gradient(top,  #5b98d6,rgba(0, 0, 0, 1)), url("images/overlay.png");
+    background-image: linear-gradient(top,  #5b98d6,rgba(0, 0, 0, 1)), url("images/overlay.png");
     content: '';
     display: block;
     height: 100%;
@@ -3664,7 +3678,7 @@ body.is-touch #banner {
 }
 
 #footer .icons .icon.alt {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 #footer .icons .icon.alt:before {
@@ -3682,7 +3696,7 @@ body.is-touch #banner {
 
 #footer .icons .icon.alt:before {
     color: #272833 !important;
-    text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 0 0 #5b98d6, -1px 0 0 #5b98d6, 0 1px 0 #5b98d6, 0 -1px 0 #5b98d6;
 }
 
 #footer .copyright {
@@ -3895,6 +3909,10 @@ body.is-touch #banner {
         overflow-x: hidden;
     }
 
+    .IconoPrincipal {
+        display: none;
+    }
+
     body,
     input,
     select,
@@ -4071,8 +4089,8 @@ body.is-touch #banner {
     }
 
     #titleBar .toggle:before {
-        background: #e44c65;
-        color: rgba(255, 255, 255, 0.5);
+        background: #5b98d6;
+        color: rgba(255, 255, 255, 0.8);
         content: '\f0c9';
         display: block;
         font-size: 18px;
